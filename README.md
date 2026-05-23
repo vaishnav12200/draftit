@@ -49,6 +49,11 @@ DraftIt is a cinematic screenplay writing studio for desktop browsers (PWA-first
 - Active item: orange left border highlight
 - Sidebar content: logo, nav items, user profile at bottom
 
+## Design reference
+
+A static layout reference is stored at [static/design/draftit-reference.html](static/design/draftit-reference.html).
+Open it directly in a browser, or run `pnpm dev` and visit /design/draftit-reference.html.
+
 ## Pages and components
 
 ### Landing (/)

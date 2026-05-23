@@ -8,6 +8,11 @@ Thanks for taking the time to help. DraftIt aims to feel like a filmmaker's writ
 2. Run the dev server: `pnpm dev`
 3. Optional checks: `pnpm check`
 
+## Design reference
+
+The static layout reference lives at [static/design/draftit-reference.html](static/design/draftit-reference.html).
+Open it directly in a browser, or run `pnpm dev` and visit /design/draftit-reference.html.
+
 ## How to contribute
 
 - Start with an issue or discuss the scope in Discord.
