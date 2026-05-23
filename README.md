@@ -242,3 +242,18 @@ Preview:
 ```sh
 pnpm preview
 ```
+
+## Contributing
+
+If you want to help, keep changes focused and aligned with the "writer's room" feel. UI work should favor calm, dark, immersive visuals and follow the typography rules above.
+
+Quick flow:
+
+- Create a branch (feature/..., fix/..., chore/...)
+- Keep PRs small and scoped
+- Include screenshots for UI changes
+- Run checks: `pnpm check`
+
+## License
+
+MIT. See [LICENSE](LICENSE).
