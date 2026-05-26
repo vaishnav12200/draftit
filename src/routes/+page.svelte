@@ -1,9 +1,5 @@
 <svelte:head>
 	<title>DraftIt — Cinematic Writing Studio</title>
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
-	/>
 </svelte:head>
 
 <div id="landing">
