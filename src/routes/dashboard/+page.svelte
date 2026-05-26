@@ -4,6 +4,8 @@
 
 <script>
 	import Topbar from "$lib/components/layout/Topbar.svelte";
+	import NavOverlay from "$lib/components/layout/NavOverlay.svelte";
+	import SideNav from "$lib/components/layout/SideNav.svelte";
 	import IconBtn from "$lib/components/ui/IconBtn.svelte";
 	import Avatar from "$lib/components/ui/Avatar.svelte";
 	import ProjectGrid from "$lib/components/dashboard/ProjectGrid.svelte";
@@ -56,6 +58,8 @@
 </script>
 
 <div id="dashboard">
+	<NavOverlay />
+	<SideNav active="dashboard" />
 	<Topbar>
 		<div slot="center" class="search-bar">
 			<i class="ti ti-search" style="color: var(--text3); font-size: 14px"></i>
