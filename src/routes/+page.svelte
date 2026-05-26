@@ -2,6 +2,12 @@
 	<title>DraftIt — Cinematic Writing Studio</title>
 </svelte:head>
 
+<script>
+	import { goto } from "$app/navigation";
+
+	const goDashboard = () => goto("/dashboard");
+</script>
+
 <div id="landing">
 	<div class="left">
 		<div class="brand-row">
@@ -18,15 +24,15 @@
 			Format as you think. Organize as you feel. Stay lost in the story -- not the software.
 		</p>
 		<div class="cta-stack">
-			<button class="btn-primary" type="button">
+			<button class="btn-primary" type="button" on:click={goDashboard}>
 				New Script
 				<i class="ti ti-arrow-right"></i>
 			</button>
-			<button class="btn-secondary" type="button">
+			<button class="btn-secondary" type="button" on:click={goDashboard}>
 				Open Draft
 				<i class="ti ti-folder-open"></i>
 			</button>
-			<button class="btn-secondary" type="button">
+			<button class="btn-secondary" type="button" on:click={goDashboard}>
 				Continue Writing
 				<i class="ti ti-pencil"></i>
 			</button>
