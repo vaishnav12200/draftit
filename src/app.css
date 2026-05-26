@@ -424,6 +424,18 @@ button {
 	box-shadow: 0 2px 12px rgba(232, 98, 26, 0.4);
 }
 
+.logo-icon.menu-icon {
+	flex-direction: column;
+	gap: 3px;
+}
+
+.logo-icon.menu-icon .menu-line {
+	width: 14px;
+	height: 1.5px;
+	background: #fff;
+	border-radius: 2px;
+}
+
 .logo-text {
 	font-family: var(--serif);
 	font-size: 19px;
