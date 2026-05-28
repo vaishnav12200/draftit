@@ -25,16 +25,8 @@
 		</p>
 		<div class="cta-stack">
 			<button class="btn-primary" type="button" on:click={goDashboard}>
-				New Script
+				Get Started
 				<i class="ti ti-arrow-right"></i>
-			</button>
-			<button class="btn-secondary" type="button" on:click={goDashboard}>
-				Open Draft
-				<i class="ti ti-folder-open"></i>
-			</button>
-			<button class="btn-secondary" type="button" on:click={goDashboard}>
-				Continue Writing
-				<i class="ti ti-pencil"></i>
 			</button>
 		</div>
 	</div>
