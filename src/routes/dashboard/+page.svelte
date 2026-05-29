@@ -7,6 +7,7 @@
 	import NavOverlay from "$lib/components/layout/NavOverlay.svelte";
 	import SideNav from "$lib/components/layout/SideNav.svelte";
 	import IconBtn from "$lib/components/ui/IconBtn.svelte";
+	import { goto } from '$app/navigation';
 	import Avatar from "$lib/components/ui/Avatar.svelte";
 	import ProjectGrid from "$lib/components/dashboard/ProjectGrid.svelte";
 	import ContinueStrip from "$lib/components/dashboard/ContinueStrip.svelte";
@@ -67,7 +68,7 @@
 		</div>
 		<div slot="actions">
 			<IconBtn label="Notifications"><i class="ti ti-bell"></i></IconBtn>
-			<IconBtn label="Settings"><i class="ti ti-settings"></i></IconBtn>
+			<IconBtn label="Settings" on:click={() => goto('/settings')}><i class="ti ti-settings"></i></IconBtn>
 			<Avatar initials="AR" label="Arjun" />
 		</div>
 	</Topbar>
