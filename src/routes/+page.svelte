@@ -5,7 +5,7 @@
 <script>
 	import { goto } from "$app/navigation";
 
-	const goDashboard = () => goto("/dashboard");
+	const goAccountCreation = () => goto("/workspace/new");
 </script>
 
 <div id="landing">
@@ -24,7 +24,7 @@
 			Format as you think. Organize as you feel. Stay lost in the story -- not the software.
 		</p>
 		<div class="cta-stack">
-			<button class="btn-primary" type="button" on:click={goDashboard}>
+			<button class="btn-primary" type="button" onclick={goAccountCreation}>
 				Get Started
 				<i class="ti ti-arrow-right"></i>
 			</button>
