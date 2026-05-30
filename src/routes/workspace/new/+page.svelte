@@ -5,13 +5,12 @@
 <script>
 	import { goto } from '$app/navigation';
 
-	let fullName = 'Arjun Verma';
-	let email = '';
-	let password = '';
-	let confirmPassword = '';
-	let workspaceName = 'The Drug Universe';
-	let role = 'Writer';
-	let agreeTerms = true;
+	let fullName = $state('Arjun Verma');
+	let email = $state('');
+	let password = $state('');
+	let confirmPassword = $state('');
+	let role = $state('Writer');
+	let agreeTerms = $state(true);
 
 	function createAccount() {
 		goto('/dashboard');
@@ -41,10 +40,7 @@
 				<span>Confirm Password</span>
 				<input bind:value={confirmPassword} type="password" placeholder="••••••••" />
 			</label>
-			<label class="full">
-				<span>Workspace Name</span>
-				<input bind:value={workspaceName} type="text" placeholder="The Drug Universe" />
-			</label>
+			
 			<label>
 				<span>Role</span>
 				<select bind:value={role}>
@@ -71,8 +67,9 @@
 		<div class="preview-title">{fullName}</div>
 		<div class="preview-meta">{email || 'arjun@example.com'} · {role}</div>
 		<div class="preview-box">
-			<div class="preview-scene">Workspace</div>
-			<div class="preview-line">{workspaceName}</div>
+			<div class="preview-scene">Contact</div>
+			<div class="preview-line">{fullName || 'Arjun Verma'}</div>
+			<div class="preview-line">{email || 'arjun@example.com'}</div>
 			<div class="preview-note">Account creation will send you straight to the dashboard.</div>
 		</div>
 	</div>
